@@ -2,3 +2,4 @@ telebot
 requests
 pandas
 requests-html
+lxml
