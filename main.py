@@ -57,7 +57,12 @@ def handle_unrestrict(message):
         bot.send_message(message.chat.id, 'Enlace inválido ♿️', parse_mode='Markdown')
 
 def get_premium_link(url):
+    # Replace mirror hosts with "turbobit.net"
+    for mirror_host in ['turbobif.com', 'turbobit.com', 'turb.to', 'turb.pw', 'turb.cc', 'turbo.to', 'turbo.pw', 'turbo.cc', 'turbobit.net', 'trbbt.net']:
+        url = url.replace(mirror_host, 'turbobit.net')
+
     response = requests.post(endpoint, headers=headers, data={"link": url})
+
     print(response.json())
     try:
         if response.json()['error'] in ["hoster_unsupported","unavailable_file"]:
