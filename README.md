@@ -61,7 +61,7 @@ for mirror_host in ['MIRROR LINK', 'MIRROR LINK']:
 2. Install requirements
 
 3. ```python
-   pip **install** -r **requirements**.txt
+   pip install -r requirements.txt
    ```
 
    
@@ -84,9 +84,9 @@ for mirror_host in ['MIRROR LINK', 'MIRROR LINK']:
 
 **HOWEVER....**
 
-There is no progress bar yet. So try to check logs if anything wrong happened. 
+- There is no progress bar yet. So try to check logs if anything wrong happened. 
+- And probably you need more requirements ><
 
-And probably you need more requirements ><
 
 
 
