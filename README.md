@@ -6,15 +6,25 @@
 
 - Send the direct link on a message **(Use main.py)**
 
-  - <img src="https://i.ibb.co/RThkmPV/bixfy.jpg" alt="direct link on a message" style="zoom:50%;" />
+  - <img src="https://i.ibb.co/RThkmPV/bixfy.jpg" alt="direct link on a message" style="zoom:35%;" />
 
 - Download and upload the file to telegram **(Use uploader.py)**
 
-  - <img src="https://i.ibb.co/YLkg0Cf/bixfy.jpg" alt="upload the file to telegram" style="zoom:50%;" />
+  - <img src="https://i.ibb.co/YLkg0Cf/bixfy.jpg" alt="upload the file to telegram" style="zoom:35%;" />
 
   ​	
 
 #### But wait... there is more!
+
+##### You can add hostings that aren't supported by Real Debrid 
+
+##### (And by that i meant mirrors of supported hostings by Real debrid)
+
+Example: Turbobit.net **is** supported but **not** its mirrors on Real Debrid.
+
+('turbobif.com', 'turbobit.com', 'turb.to', 'turb.pw', 'turb.cc', 'turbo.to', 'turbo.pw', 'turbo.cc', 'turbobit.net', 'trbbt.net ')
+
+
 
 *Search for* 
 
@@ -24,9 +34,7 @@ def get_premium_link(url):
 
 And add the mirror of hostings that aren't supported by Real Debird.
 
-Example: Turbobit.net **is** supported but **not** its mirrors on Real Debrid.
 
-('turbobif.com', 'turbobit.com', 'turb.to', 'turb.pw', 'turb.cc', 'turbo.to', 'turbo.pw', 'turbo.cc', 'turbobit.net', 'trbbt.net ')
 
 As you can see in the code:
 
@@ -43,6 +51,34 @@ Just do in a new line after that:
 for mirror_host in ['MIRROR LINK', 'MIRROR LINK']:
     url = url.replace(mirror_host, 'ACCEPTED LINK BY RD')
 ```
+
+
+
+### How to use?
+
+1. Install python
+
+2. Install requirements
+
+3. ```python
+   pip **install** -r **requirements**.txt
+   ```
+
+   
+
+4. run main.py or uploader.py
+
+5. ```python
+   python main.py
+   ```
+
+    or 
+
+   ```python
+   python uploader.py
+   ```
+
+   
 
 
 
