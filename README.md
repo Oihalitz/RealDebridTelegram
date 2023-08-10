@@ -1,5 +1,9 @@
 # **Real Debrid Upload (& Parser) to Telegram**
 
+*Right now uploader.py code is a bit sloppy and I'm trying to integrate it with proxies. It works but NOT with proxies yet. feel free to send a pull .*
+
+*This way it doesn't get ip locked by Real Debrid using VPS*
+
 
 
 ### ***A code for telegram bot do one of two things:***
@@ -64,21 +68,33 @@ for mirror_host in ['MIRROR LINK', 'MIRROR LINK']:
    pip install -r requirements.txt
    ```
 
+4. If you are using docker, edit Docker file, Default is "uploader.py" but you can change it if you want to use "main.py" Also in docker file enter the Real Debrid API and Token
+
+5. Edit main.py and uploader.py with your Real Debrid API and Token
+
+6. If using Docker run them using 
+
+   ```
+   sudo docker build . -t rd
+   ```
+
+   ```
+   sudo docker run rd
+   ```
+
    
 
-4. run main.py or uploader.py
+7. run main.py or uploader.py
 
-5. ```python
+8. ```python
    python main.py
    ```
 
     or 
 
    ```python
-   python uploader.py
+   python uploader.py		
    ```
-
-   
 
 
 
