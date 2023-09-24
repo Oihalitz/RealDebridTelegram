@@ -86,7 +86,7 @@ def handle_unrestrict(message):
 
 def get_premium_link(url, proxy):
     # Replace mirror hosts with "turbobit.net"
-    for mirror_host in ['turbobyt.net','turbobif.com', 'turbobit.com', 'turb.to', 'turb.pw', 'turb.cc', 'turbo.to', 'turbo.pw', 'turbo.cc', 'turbobit.net', 'trbbt.net']:
+    for mirror_host in ['turbobyt.net', 'turbobif.com', 'turbobit.com', 'turb.to', 'turb.pw', 'turb.cc', 'turbo.to', 'turbo.pw', 'turbo.cc', 'turbobit.net', 'trbbt.net']:
         url = url.replace(mirror_host, 'turbobit.net')
 
     response = requests.post(endpoint, headers=headers, data={"link": url}, proxies=proxy)
