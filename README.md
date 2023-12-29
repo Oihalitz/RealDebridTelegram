@@ -1,9 +1,5 @@
 # **Real Debrid Upload (& Parser) to Telegram**
 
-*Right now uploader.py code is a bit sloppy and I'm trying to integrate it with proxies. It works but NOT with proxies yet. feel free to send a pull .*
-
-*This way it doesn't get ip locked by Real Debrid using VPS*
-
 
 
 ### ***A code for telegram bot do one of two things:***
@@ -15,8 +11,10 @@
 - Download and upload the file to telegram **(Use uploader.py)**
 
   - <img src="https://i.ibb.co/YLkg0Cf/bixfy.jpg" alt="upload the file to telegram" style="zoom:35%;" />
+  
+> [!NOTE]
+> The max upload size is 2GB.
 
-  ​	
 
 #### But wait... there is more!
 
